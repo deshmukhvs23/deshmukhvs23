@@ -67,7 +67,7 @@ AI Engineering SSIM · IoU · Morphological processing · C2W matrix reconstruct
 ## Education
 
 - **M.Tech** Computational & Data Science — NIT Karnataka, Surathkal *(2024–2026)*
-- **B.Tech** Computer Engineering — Vishwakarma Institute of Technology, Pune *(2019–2023)*
+- **B.Tech** Instrumentation and Control Engineering — Vishwakarma Institute of Technology, Pune *(2019–2023)*
 
 ---
 
