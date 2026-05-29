@@ -46,7 +46,7 @@ Retrieval-Augmented Generation pipeline built from scratch — no framework magi
 ## Experience
 
 **Siemens Industry Software** — Intern, NX Software *(Jun 2025 – Present)*
-- Delivered Image Comparison Autotest POC — integrated Python validation into NX C++ core
+- Delivered Image Comparison Autotest POC — integrated 3rd party APIs into NX C++ core
 - Developed Edge Transition Symbol (ETS) backend logic for MBD annotation workflows
 - Resolved critical defects in NX 3D PDF workflows — Viewport APIs, Digital Signature APIs
 
