@@ -1,78 +1,107 @@
 # Hi, I'm Vedant Deshmukh 👋
 
-M.Tech Computational & Data Science @ NIT Karnataka · Applied AI Engineer · Siemens Industry Software Intern
+**Software Engineer | C++ · Python · AI Systems**
+
+M.Tech in Computational & Data Science from NIT Karnataka, with one year of software development experience at Siemens Digital Industries Software.
+
+I build systems at the intersection of software engineering, AI infrastructure, automated validation, and performance engineering. I prefer understanding and measuring how a system works—not merely connecting APIs.
+
+Currently seeking entry-level **Software Engineering, AI Infrastructure, ML Systems, and C++/Python** opportunities.
 
 ---
 
-## About me
+## Featured Projects
 
-I build rigorous, production-oriented AI and engineering systems — not just demos. My work spans automated validation pipelines, ML-driven trading engines, and GenAI applications. I care about understanding *why* something works, not just *that* it works.
+### [cpp-modernize-agent](https://github.com/deshmukhvs23/cpp-modernize-agent)
 
-Currently finishing my MTech thesis on automated 3D PDF validation at Siemens Industry Software, and actively looking for Applied AI / SDE roles.
+AI-assisted C++ modernization agent powered by NVIDIA Nemotron through Nebius Token Factory.
 
----
+- Detects legacy C++ patterns and requests structured, exact-match edits
+- Validates every change through CMake builds and CTest
+- Retries failed edits with a stronger model and restores unsuccessful changes
+- Preserves CRLF/LF formatting and records attempt-level evaluation metrics
+- Successfully validated `NULL → nullptr` on the TinyXML-2 repository
+- `Python` `C++` `NVIDIA Nemotron` `Nebius Token Factory` `CMake` `CTest` `pytest`
 
-## Projects
+### [InferX — LLM Inference Engine](https://github.com/deshmukhvs23/inferx)
 
-### 🔬 [Image Comparison Autotest](https://github.com/deshmukhvs23/Image-Comparison-Autotest)
-Automated 3D PDF export validation pipeline built during my MTech thesis at Siemens Industry Software.
-- **Stage 1** — Orthographic STL rendering (8 NX standard views)
-- **Stage 2** — C2W matrix extraction from 3D PDF and view reconstruction
-- **Stage 3** — Silhouette comparison with SSIM + IoU, color-coded diff maps, HTML report
-- Deployable on CI servers — no NX license or Adobe Acrobat required
-- `Python` `OpenCV` `pikepdf` `SSIM` `IoU` `trimesh` `matplotlib`
+Experimental LLM-serving engine for understanding inference internals and performance engineering.
 
----
+- Implemented explicit prefill and iterative decoding using KV caching
+- Added latency, throughput, token-count, and device-level measurements
+- Served Qwen2.5-0.5B-Instruct through a REST API
+- Achieved approximately 24.9 generated tokens/second on a 4 GB GTX 1050
+- Roadmap includes batching, quantization, request scheduling, paged KV cache, and CUDA kernels
+- `Python` `PyTorch` `Transformers` `CUDA` `FastAPI` `Linux`
 
-### 📈 [ML-Driven Trading Signals](https://github.com/deshmukhvs23/ML-Driven-Trading-Signals)
-Binary classification pipeline predicting next-day stock direction for 10 high-liquidity stocks.
-- 14+ technical features across momentum, volume, volatility, and trend categories
-- Chronological train/test split to prevent data leakage
-- Confidence-threshold three-zone strategy (Buy ≥0.55, Short ≤0.45, Hold)
-- Honest finding: AUC ~0.51 — marginal but consistent edge, aligned with EMH
-- `Python` `XGBoost` `AdaBoost` `CatBoost` `AUC-ROC` `Pandas` `yfinance`
+### [Automated 3D PDF Validation Pipeline](https://github.com/deshmukhvs23/Image-Comparison-Autotest)
 
----
+Developed during my M.Tech project and Siemens internship to verify visual fidelity between Siemens NX views and exported Technical Data Packages.
 
-### 🤖 [RAG Pipeline](https://github.com/deshmukhvs23/rag-pipeline)
-Retrieval-Augmented Generation pipeline built from scratch — no framework magic hidden.
-- PDF ingestion → chunking → embedding → FAISS index → retrieval → LLM answer
-- Every design decision documented: chunk size trade-offs, why cosine similarity, flat vs IVF index
-- Evaluation layer with retrieval quality scoring
-- `Python` `sentence-transformers` `FAISS` `pypdf` `Anthropic`
+- Rendered reference views from STL geometry
+- Extracted camera-to-world matrices from 3D PDFs and reconstructed viewpoints
+- Compared silhouettes using SSIM, IoU, dilation, and difference maps
+- Built an automated pass/fail pipeline for regression detection
+- `C++` `Python` `NX Open` `OpenCV` `SSIM` `IoU` `3D PDF/PRC`
+
+### [ML-Based Stock Direction Analysis](https://github.com/deshmukhvs23/ML-Driven-Trading-Signals)
+
+Evaluated whether technical indicators provide a measurable signal for next-day stock direction.
+
+- Engineered SMA, RSI, CCI, Bollinger Band, OBV, momentum, and volatility features
+- Compared Logistic Regression, Random Forest, XGBoost, LightGBM, CatBoost, and AdaBoost
+- Used chronological train/test splits to reduce data leakage
+- Reported the weak AUC result honestly instead of overstating model performance
+- `Python` `scikit-learn` `XGBoost` `LightGBM` `CatBoost` `Pandas`
 
 ---
 
 ## Experience
 
-**Siemens Industry Software** — Intern, NX Software *(Jun 2025 – Jun 2026)*
-- Delivered Image Comparison Autotest POC — integrated 3rd party APIs into NX C++ core
-- Developed Edge Transition Symbol (ETS) backend logic for MBD annotation workflows
-- Resolved critical defects in NX 3D PDF workflows — Viewport APIs, Digital Signature APIs
+### Siemens Digital Industries Software — NX Software Developer Intern
+
+*June 2025 – June 2026*
+
+- Contributed to the Model Based Definition team using production C++ and Python
+- Developed an automated image-comparison pipeline for NX Technical Data Package testing
+- Worked with NX Open, 3D PDF/PRC, camera matrices, poster images, and engineering geometry
+- Investigated defects and regressions across export, rendering, and validation workflows
+- Built utilities and automated tests for repeatable verification
 
 ---
 
-## Skills
+## Technical Skills
 
-```
-Languages     Python · C/C++ · Java · SQL
-ML / AI       XGBoost · CatBoost · OpenCV · scikit-learn · NumPy · Pandas
-GenAI         RAG · Embeddings · Vector DBs · Prompt engineering · LangChain
-Backend       FastAPI · REST APIs · Git · Docker
-AI Engineering SSIM · IoU · Morphological processing · C2W matrix reconstruction
+```text
+Languages       C++ · Python · Java · C · SQL
+AI / ML         PyTorch · scikit-learn · OpenCV · XGBoost · CatBoost
+GPU / Parallel  CUDA · OpenMP · MPI · GPU inference fundamentals
+Systems         Linux · WSL2 · CMake · Git · REST APIs · Debugging
+Backend         FastAPI · Django · SQL · API development
+Engineering     Testing · Regression automation · Performance measurement
+Domain Tools    NX Open · 3D PDF/PRC · SSIM · IoU · Camera matrices
 ```
 
 ---
 
 ## Education
 
-- **M.Tech** Computational & Data Science — NIT Karnataka, Surathkal *(2024–2026)*
-- **B.Tech** Instrumentation and Control Engineering — Vishwakarma Institute of Technology, Pune *(2019–2023)*
+- **M.Tech, Computational & Data Science** — National Institute of Technology Karnataka, Surathkal *(2024–2026)*
+- **B.Tech, Instrumentation and Control Engineering** — Vishwakarma Institute of Technology, Pune *(2019–2023)*
+- **GATE CSE 2024** — AIR 2074
+
+---
+
+## Current Focus
+
+- Modern C++ and Linux systems programming
+- LLM inference and AI infrastructure
+- CUDA and GPU performance engineering
+- Reliable AI-assisted software development
+- Data structures, algorithms, and software design
 
 ---
 
 ## Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vedant_Deshmukh-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/vedant-deshmukh)
-[![GitHub](https://img.shields.io/badge/GitHub-deshmukhvs23-181717?style=flat&logo=github)](https://github.com/deshmukhvs23)
-[![Email](https://img.shields.io/badge/Email-vedantdeshmukh0444@gmail.com-D14836?style=flat&logo=gmail)](mailto:vedantdeshmukh0444@gmail.com)
+- GitHub: [github.com/deshmukhvs23](https://github.com/deshmukhvs23)
