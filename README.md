@@ -88,7 +88,7 @@ Domain Tools    NX Open · 3D PDF/PRC · SSIM · IoU · Camera matrices
 
 - **M.Tech, Computational & Data Science** — National Institute of Technology Karnataka, Surathkal *(2024–2026)*
 - **B.Tech, Instrumentation and Control Engineering** — Vishwakarma Institute of Technology, Pune *(2019–2023)*
-- **GATE CSE 2024** — AIR 2074
+- **GATE CSE 2024** — AIR 2067
 
 ---
 
